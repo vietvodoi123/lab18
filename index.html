@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Carousel Page</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand">Carousel</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+          aria-controls="navmenu"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Link</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link disabled">Disabled</a>
+            </li>
+          </ul>
+          <form class="d-flex justify-content-between gap-3 ms-auto">
+            <input
+              type="search"
+              placeholder="Search"
+              aria-label="search"
+              class="form-control"
+            />
+            <button class="btn btn-outline-success">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+
+    <section id="carousel">
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!-- slider 1 -->
+          <div class="carousel-item active bg-danger" style="height: 70vh">
+            <div class="carousel-caption text-start">
+              <h2 class="mb-2">Exemple headline</h2>
+              <p class="mb-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+                accusantium vero illo fuga sit quis rerum ratione,
+                necessitatibus architecto ipsam!
+              </p>
+              <p><a href="#" class="btn btn-warning p-2">sign up today</a></p>
+            </div>
+          </div>
+
+          <!-- slider 2 -->
+          <div class="carousel-item bg-primary" style="height: 70vh">
+            <div class="carousel-caption text-start">
+              <h2 class="mb-2">another exemple headline</h2>
+              <p class="mb-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit
+                libero aspernatur nostrum eos, perspiciatis rem..
+              </p>
+              <p><a href="#" class="btn btn-light p-2">learn more</a></p>
+            </div>
+          </div>
+
+          <!-- slider 3-->
+          <div class="carousel-item bg-warning" style="height: 70vh">
+            <div class="carousel-caption text-start">
+              <h2 class="mb-2">one more for good measure</h2>
+              <p class="mb-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit,
+                recusandae.
+              </p>
+              <p><a href="#" class="btn btn-dark p-2">browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+
+        <!-- button next and prev-->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="footer">
+      <div class="container-xl d-flex mt-5">
+        <span>&copy; 2017 - 2021, Company, Inc</span>
+        <ul class="d-flex gap-4">
+          <li>
+            <a href="#">privacy</a>
+          </li>
+          <li>
+            <a href="#">terms</a>
+          </li>
+        </ul>
+        <a href="#" class="ms-auto">back to top</a>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
